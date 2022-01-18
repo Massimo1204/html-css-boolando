@@ -4,10 +4,12 @@
     padding: 0;
 }
 
+/* FONT */
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* DIMENSIONI RIGA */
 .riga{
     width: 80%;
     margin: 0 auto;
@@ -16,15 +18,25 @@ body{
     margin-bottom: 100px;
 }
 
+/* DIMESIONI IMMAGINI PRODOTTI */
 .immagine{
     width: calc(100% - 20px);
     height: calc(var(--width) * 1.44375);
 }
 
+/* DIMESIONI DIV PRODOTTO */
 .prodotto{
     display: inline-block;
     width: calc(99% / 3);
     height: calc((var(--width) * 1.44375) + 200px);
+}
+
+/* IMMAGINE RETRO */
+.retro{
+    display: none;
+    z-index: 3;
+    top: 0px;
+    left: 0px;
 }
 
 .relative{
@@ -35,13 +47,6 @@ body{
     position: absolute;
 }
 
-.retro{
-    display: none;
-    z-index: 3;
-    top: 0px;
-    left: 0px;
-}
-
 .block{
     display: block;
 }
@@ -50,10 +55,12 @@ body{
     width: 100%;
 }
 
+/* MOSTRA IMMAGINE RETRO CON HOVER */
 .prodotto:hover .retro{
     display: inline-block;
 }
 
+/* CARTELLINO SCONTO */
 .sconto{
     color: white;
     left: 0px;
@@ -63,7 +70,8 @@ body{
 .red{
     color: #E81345;
 }
-    
+
+/* CARTELLINO SOSTENIBILITA' */
 .sostenibile{
     color: white;
     background-color: #00875A;
@@ -87,4 +95,27 @@ body{
 .barrato{
     text-decoration: line-through;
     color: black;
+}
+
+.cuore{
+    background-color: white;
+    top: 5px;
+    right: 13px;
+}
+
+/* CONTENITORE CUORE */
+.contenitore{
+    display: inline;
+    margin: 0 auto;
+    border: 0;
+    padding: 25px 25px;
+    top: 25px;
+    right: 20px;
+    font-size: 2.2em;
+    z-index: 4;
+}
+
+/* CUORE ROSSO CON HOVER */
+.contenitore:hover .cuore{
+    color: #E81345;
 }
