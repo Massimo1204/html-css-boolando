@@ -13,9 +13,8 @@ body{
 .riga{
     width: 80%;
     margin: 0 auto;
-    height: 700px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    height: calc((var(--width) * 1.44375) + 200px);
+    margin-top: 50px;
 }
 
 /* DIMESIONI IMMAGINI PRODOTTI */
@@ -65,6 +64,8 @@ body{
     color: white;
     left: 0px;
     background-color: #E81345;
+    font-size: 0.8em;
+    font-weight: 600;
 }
 
 .red{
@@ -76,10 +77,11 @@ body{
     color: white;
     background-color: #00875A;
     left: 50px;
+    font-size: 0.8em;
 }
 
 .stile{
-    bottom: 125px;
+    bottom: 80px;
     z-index: 4;
     padding: 6px;
 }
@@ -118,6 +120,10 @@ body{
 }
 
 /* CUORE ROSSO CON HOVER */
-.contenitore:hover .cuore{
+.contenitore:active .cuore{
     color: #E81345;
+}
+
+.contenitore:hover .cuore{
+    cursor: pointer;
 }
